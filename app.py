@@ -1,6 +1,7 @@
 import streamlit as st
 from textblob import TextBlob
 from googletrans import Translator
+from PIL import Image
 
 # Configuración de la página
 st.set_page_config(page_title="Análisis de Sentimientos", layout="centered")
