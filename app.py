@@ -41,7 +41,7 @@ st.markdown("<h1 style='text-align: center;'> 😊Análisis de Sentimientos🥺<
 st.markdown("<p style='text-align: center;'>Analiza la polaridad y subjetividad de un texto y recibe una reacción emocional.</p>", unsafe_allow_html=True)
 
 image = Image.open("get-in-touch-with-emotions.png")
-st.image(image, width=300)
+st.image(image, width=900)
 
 
 st.markdown("---")
