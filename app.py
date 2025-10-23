@@ -5,6 +5,10 @@ from googletrans import Translator
 # Configuración de la página
 st.set_page_config(page_title="Análisis de Sentimientos", layout="centered")
 
+ image = Image.open("imagen_2025-09-12_155805756.png")
+    st.image(image, width=300)
+
+
 # Estilos oscuros personalizados
 st.markdown("""
     <style>
