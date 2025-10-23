@@ -5,10 +5,6 @@ from googletrans import Translator
 # Configuración de la página
 st.set_page_config(page_title="Análisis de Sentimientos", layout="centered")
 
- image = Image.open("imagen_2025-09-12_155805756.png")
-    st.image(image, width=300)
-
-
 # Estilos oscuros personalizados
 st.markdown("""
     <style>
@@ -40,8 +36,12 @@ st.markdown("""
 translator = Translator()
 
 # Título
-st.markdown("<h1 style='text-align: center;'>🧠 Análisis de Sentimientos</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center;'> 😊Análisis de Sentimientos🥺</h1>", unsafe_allow_html=True)
 st.markdown("<p style='text-align: center;'>Analiza la polaridad y subjetividad de un texto y recibe una reacción emocional.</p>", unsafe_allow_html=True)
+
+ image = Image.open("Emociones.jpg")
+    st.image(image, width=300)
+
 
 st.markdown("---")
 
@@ -63,7 +63,7 @@ col1, col2 = st.columns(2)
 
 # Columna 1: Análisis de sentimientos
 with col1:
-    st.subheader("🔍 Análisis emocional del texto")
+    st.subheader("🔍 Análisis del texto")
     text1 = st.text_area("Escribe una frase en español:")
 
     if text1:
@@ -84,7 +84,7 @@ with col1:
         # Respuesta emocional adaptada
         st.markdown("🤖 Reacción del sistema:")
         if polarity >= 0.5:
-            st.success("¡Qué bonito lo que escribiste! Se siente muy positivo 🌟")
+            st.success("¡Qué bien! Se siente muy positivo 🌟")
         elif polarity <= -0.5:
             st.error("Veo que hay sentimientos negativos... Si necesitas hablar, aquí estoy. 💙")
         else:
@@ -92,8 +92,8 @@ with col1:
 
 # Columna 2: Corrector en inglés
 with col2:
-    st.subheader("✏ Corrector de texto en inglés")
-    text2 = st.text_area("Escribe un texto en inglés para corregir:", key="correction")
+    st.subheader(" 📎Corrector de texto en inglés📎")
+    text2 = st.text_area("Escribe un texto en inglés:", key="correction")
 
     if text2:
         blob2 = TextBlob(text2)
